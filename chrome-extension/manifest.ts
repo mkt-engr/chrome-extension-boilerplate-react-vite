@@ -41,26 +41,26 @@ const manifest = {
     default_icon: 'icon-34.png',
   },
   chrome_url_overrides: {
-    newtab: 'new-tab/index.html',
+    // newtab: 'new-tab/index.html',
   },
   icons: {
     128: 'icon-128.png',
   },
   content_scripts: [
     {
-      matches: ['http://*/*', 'https://*/*', '<all_urls>'],
+      matches: ['https://*.atlassian.net/browse/*'],
       js: ['content/index.iife.js'],
     },
     {
-      matches: ['http://*/*', 'https://*/*', '<all_urls>'],
+      matches: ['https://*.atlassian.net/browse/*'],
       js: ['content-ui/index.iife.js'],
     },
     {
-      matches: ['http://*/*', 'https://*/*', '<all_urls>'],
+      matches: ['https://*.atlassian.net/browse/*'],
       css: ['content.css'],
     },
   ],
-  devtools_page: 'devtools/index.html',
+  // devtools_page: 'devtools/index.html',
   web_accessible_resources: [
     {
       resources: ['*.js', '*.css', '*.svg', 'icon-128.png', 'icon-34.png'],

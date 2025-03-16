@@ -31,4 +31,4 @@ if (navigator.userAgent.includes('Firefox')) {
 }
 
 shadowRoot.appendChild(rootIntoShadow);
-createRoot(rootIntoShadow).render(<App />);
+// createRoot(rootIntoShadow).render(<App />);

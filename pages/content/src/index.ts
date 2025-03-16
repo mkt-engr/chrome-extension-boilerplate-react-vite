@@ -1,6 +1,5 @@
-import { sampleFunction } from '@src/sampleFunction';
+import { setJiraTicketNumberCopyButton } from './setJiraTicketNumberCopyButton';
 
-console.log('content script loaded');
+// console.log('content script loaded');
 
-// Shows how to call a function defined in another module
-sampleFunction();
+setJiraTicketNumberCopyButton();
